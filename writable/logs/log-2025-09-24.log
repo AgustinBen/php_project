@@ -1,0 +1,26 @@
+CRITICAL - 2025-09-24 18:26:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "users/edit.php"
+[Method: GET, Route: user/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/edit.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('users/edit', [], true)
+ 3 APPPATH\Controllers\User.php(25): view('users/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-24 18:26:51 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user/create]
+in APPPATH\Views\users\create.php on line 25.
+ 1 APPPATH\Views\users\create.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'D:\\xampp\\htdocs\\app_ci4\\app\\Views\\users\\create.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp\\htdocs\\app_ci4\\app\\Views\\users\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('users/create', [], true)
+ 5 APPPATH\Controllers\User.php(19): view('users/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
